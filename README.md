@@ -36,3 +36,14 @@ mean=sum/n;
 // Find variance
 p=a;
 for(i=0;i<n;i++)
+{
+var=var+pow((*p-mean),2);
+p++;
+}
+var=var/n;
+// Find Standard Deviation
+sd=sqrt(var);
+// Print Sum, mean and Standard Deviation
+printf("\n\n mean=%f\nsum=%f\nsd=%f\nvar=%f\n",mean,sum,sd,var);
+return 0;
+}
